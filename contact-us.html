@@ -59,17 +59,18 @@
         </header>
 
        <div class="main2">
-           <h1>Contact us</h1>
+            <h1>Contact us</h1>
             <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+            
             <form action="mail.php" method="post">
 
                 <div class="inputwrapper">
-                    <label for="name">FirstName</label>
+                    <label for="name" class="newline">FirstName</label>
                     <input type="text" name="Name" id="name" placeholder="FirstName">
                 </div>
 
                 <div class="inputwrapper">
-                    <label for="email">Email</label>
+                    <label for="email" class="newline">Email</label>
                     <input type="email" name="email" id="email" placeholder="sam@sample.com">
                 </div>
 
@@ -89,12 +90,27 @@
                     <p>How would you like to be contacted?</p>
                     
                     <input type="radio" name="contact-pref" id="phone" value="phone">
-                    <label for="phone">Phone</label>
+                    <label for="phone" class="margin-right-a">Phone</label>
                     <input type="radio" name="contact-pref" id="email2" value="Email">
-                    <label for="email2">Email</label>
+                    <label for="email2" class="margin-right-a">Email</label>
 
                 </div>
-                <input type="submit" value="Fire away">
+                <div class="inputwrapper">
+                    <select name="county" id="county">
+                        <option value="Not-chosen">Choose County</option>
+                        <option value="Limerick">Limerick</option>
+                        <option value="Galway" >Galway</option>
+                        <option value="Dublin">Dublin</option>
+
+
+                        <input type="date" name="" id="">
+                        <input type="color" name="" id="">
+
+                    </select>
+                </div>
+
+
+                <input type="submit" value="Fire away" class="mybutton">
 
 
 
